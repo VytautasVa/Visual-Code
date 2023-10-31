@@ -3,18 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lentelė</title>
+    <!-- Internal stilius. rašomas <head> -->
+    <style type="text/css">    
+        body {background-color:rgb(26, 89, 148);} 
+        p {color: yellow;}
+        tr{color: burlywood;}
+        /* Lentelės stilizavimas, kraštinės */
+        table{ 
+         border:1px solid black;
+         border-collapse: collapse;
+         width: 90%;
+         
+        }
+        td{
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        } 
+/* stiliaus pririmas pagal klases. kreipimasis į klasę prasideda .  */
+        .row1{
+            height: 100px;
+            color: black;
+        }
+        .row2{
+            height: 80px;
+            color: blue;    
+        }
+        .row3{
+            height: 50px;
+            color: white;
+        }
+
+    </style>
+<link href="Stilius.css" rel="stylesheet"> <!--External stilius. Rašomas kitame faie su galūn .CSS-->
+
 </head>
+
 <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, vel?</p>      <!--?1? koks skirtumas su <p> ar be ??-->
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, atque?    <!--?1? koks skirtumas su <p> ar be ??-->
+
+    <h1 style=color:white;> <ins>Lentelė :)))) </ins></h1>                          <!-- ?2? Kodėl ")" raudonas, nepilnai gauna stiliu ???-->
+
     <table>
-        <tr>
+        <tr class="row1">
+            <td>100</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td style="color: red;"> 8</td> <!--Inline stilius. rašomas kėkvieam elementui atskirai-->
+            <td>11</td>
+            <td>7</td>
+        </tr>
+        <tr class="row2">
             <td>1</td>
             <td>2</td>
             <td>3</td>
             <td>4</td>
             <td>5</td>
             <td>6</td>
+            <td style="color: red;"> 8</td> <!--Inline stilius. rašomas kėkvieam elementui atskirai-->
+            <td>11</td>
+            <td>7</td>
+        </tr>
+        <tr class="row3">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td style="color: red;"> 8</td> <!--Inline stilius. rašomas kėkvieam elementui atskirai-->
+            <td>11</td>
+            <td>7</td>
+        </tr>
+        
+    </table>
+
+    <h3>Lentelės pabaiga</h3>
+    <h4>Lorem, ipsum dolor.</h4>
+
+    <table>         <!--greitas lentelės generavimas table> tr*3>(eilutės) td*4(stulpeliai) -->
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>8</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>q</td>
+            <td>z</td>
+            <td>d</td>
+        </tr>
+        <tr>
+            <td>:)</td>
+            <td>:/</td>
+            <td>:}</td>
         </tr>
     </table>
+
+
 </body>
 </html>
