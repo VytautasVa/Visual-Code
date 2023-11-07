@@ -6,7 +6,7 @@
     <title>INVOICE</title>
     <style>
       .logo {
-        background-color: rgb(65, 64, 64);
+        background-color: #606060;
         border-radius: 50%;
         height: 100px;
         width: 100px;
@@ -109,12 +109,15 @@
     </table>
     <table class="penkta">
       <!---4 lentelė 10x4 1eil stilius su klasėm, (geriau su thead ir tbody ?) -->
+      <!-- <thead> -->
       <tr class="trecia">
         <td class="trecia">DESCRIPTION</td>
         <td class="trecia">QTY</td>
         <td class="trecia">UNIT PRICE</td>
         <td class="trecia">TOTAL</td>
       </tr>
+    <!-- </thead> -->
+    <!-- <tbody> -->
       <tr class="ketvirta">
         <td class="ketvirta">Monitorius</td>
         <td class="ketvirta">10</td>
@@ -151,6 +154,8 @@
         <td class="ketvirta">&emsp;</td>
         <td class="ketvirta">0.00</td>
       </tr>
+    <!-- </tbody> -->
+    <!-- <tfoot> -->
       <tr>
         <td></td>
         <td></td>
@@ -169,6 +174,7 @@
         <td><b>Balance <br />Due</b></td>
         <td style="background-color: lightskyblue; border-bottom: 1px solid black; text-align: right;"><b>&euro; 1,009.90</b></td>
         </tr>
+        <!-- </tfoot> -->
     </table>
   </body>
 </html>
