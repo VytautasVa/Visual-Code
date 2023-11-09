@@ -1,4 +1,113 @@
+*{
+box-sizing: border-box;
+}
 body{
     margin: 0;
-    background: url(bacgound.png) no-repeat center center / cover;
+    background: url(bacgound.png) no-repeat center center /cover; /*su cover ne per visą ekraną lieka apačia, panaikinus coverdar sumažėja*/
 }
+.main{
+    position: relative;
+    background-color: white;
+    max-width: 1440px;
+    width: 100%;
+    margin: 100px auto;
+    border-radius: 50px;
+    padding: 30px 50px;
+    overflow: hidden ;  /*paslelia išlindusius kraštus*/
+    height: 600px;  /*laikinai*/
+}
+.main::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #6DE1C2;
+    height: 100%;
+    width: 419px;
+    /* border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px (pakeičia overflow:hidden; prie .main)*/
+
+}
+.inner{
+    height: 550px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.left{
+    background-color: white;
+    width: 50%;
+    height: 100%; /*laikina*/
+}
+.map{
+background-image: url(map.png);
+width: 50%;
+height: 100%; /*laikina*/
+}
+@media screen and (max-width: 768px) {
+    .inner{
+        flex-direction: column;
+    }
+    .left,
+    .map {
+        width: 100%;
+    }
+    }
+    h1{
+        
+    }
+    p{
+
+    }
+
+    form{
+        display: flex;
+        height: 55px;
+        padding: 12px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        
+        }
+    input{
+        border: none;
+        border-bottom: 1px solid rgba(115, 123, 125, 1);
+    }
+    .uplode{
+        display: flex;
+        width: 548px;
+        padding: 40px 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px dashed var(--Input-text, #8E8E8E);
+        height: 104px;
+        
+        
+    }
+    .submit{
+        display: flex;
+        width: 549px;
+        padding: 16px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #0982FE;
+        color: white;
+        border-radius: 10px;
+        
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        flex-shrink: 0;
+        width: 698px;
+        height: 40px;
+
+
+    }
