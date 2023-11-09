@@ -1,15 +1,20 @@
+/*visų elementų pasirinkimas*/
+*{
+    /* į bendrą plotį neiskaičiuojamos border ir padding reikšmės */
+    box-sizing: border-box;
+}
 body{
-    background-color: rgb(207, 219, 228);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    background:url(bacgound.png) no-repeat center center / cover;
+    
 }
 .box{
     background-color: rgb(255, 255, 255);
     width: 1440px;
-    height: 912px;
-    margin: 50px 50px;
+    height: 912px; /*geriau palikti nefiksuota, kad turinys gal4tu stumti žemyn */
+    margin: 50px ;
     border-radius: 50px;
+    position: relative;
     display: flex;
     justify-content: left;
     align-items: start;
@@ -27,7 +32,7 @@ div .box2{
     width: 545px;
     height: 48px;
     position: absolute;
-    top: 140px;
+    top: 108px;
     left: 97px;
     }
 div .box3{
@@ -35,45 +40,38 @@ div .box3{
     height: 368px;
     position: absolute;
     top: 180px;
-    left: 98px;
+    left: 95px;
     }
 div .box4{
     width: 551px;
     height: 500px;
     position: absolute;
-    top: 557px;
-    left: 98px;
+    top: 997px;
+    left: 97px;
     }
 div .box5{
     width: 551px;
     height: 500px;
     position: absolute;
-    top: px;
-    left: px;
+    top: 833px;
+    left: 90px;
 }
 div .box6{
     width: 551px;
     height: 500px;
     position: absolute;
-    top: px;
-    left: px;
+    top: 100px;
+    left: 1021px;
 }
-div.box7{
-    width: 551px;
-    height: 500px;
-    position: absolute;
-    top: px;
-    left: px;
-}
-.box8{
+.box7{
     background-color: rgb(109, 225, 194);
     width: 419px;
     height: 912px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    position: fixed;
-    top: 59px;
-    left: 959px;
+    position: absolute;
+    top: 58px;
+    left: 1249px;
 
 }
 img{
@@ -97,17 +95,4 @@ input{
     border-bottom: 1px solid gray;
     font-size: 16px;
 
-}
-table{
-    border: 1px solid black;
-    width: 548px;
-    height: 104px;
-    
-}
-tr{
-    border: 1px solid black;
-}
-td{
-    border: 1px solid black;
-    text-align: center;
 }
