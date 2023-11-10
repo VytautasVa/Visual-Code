@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styleV2.css">
 </head>
 <body>
@@ -13,26 +19,52 @@
                 <h1>Get in <span style="color: rgb(109, 225, 194)">touch</span></h1>
                 <p>Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.</p>
                 <form>
-                    <input type="text" placeholder="contact name">
-                    <input type="text" placeholder="street">
-                    <input type="text" placeholder="City">
-                    <input type="text" placeholder="Postcode">
-                    <input type="tel"  placeholder="Contact Phone">
-                    <input type="text" placeholder="Let's talk about your ideas"><br>
+                    <input type="text" placeholder="contact name" />
+                    <input type="text" placeholder="street" />
+                    <div class="flex">
+                        <input type="text" placeholder="City" />
+                        <input type="text" placeholder="Postcode" />
+                    </div>
+                    <input type="tel"  placeholder="Contact Phone" />
+                    <input type="text" placeholder="Let's talk about your ideas" /><br>
                 </form>
                 <div class="uplode">
-                    Upload Additional file
+                    <img src="upload.svg" alt="upload.svg"/>Upload Additional file
                 </div>
                 Attach file. File size of your documents should not exceed 10MB<br>
                 <div>
-                <input type="checkbox" id="checkbox">
+                <input style="width: 5%;" type="checkbox" id="checkbox">
                 <label for="checkbox">I want to protect my data by signing an NDA</label>
                 </div>
                 <button class="submit">SUBMIT</button>
-                <div class="icons">
-                    <div>Phone</div>
-                    <div>E-MAIL</div>
-                    <div>HELPDESK</div>
+                <div class="contact">
+                    <div class="icon"><img src="phone.svg" alt="phone icon"></div>
+                    <div class="text-wrapper">
+                        <div class="header">
+                            Phone
+                        </div>
+                        <div class="body">
+                        111 111 111
+                        </div>
+                    </div>
+                    <div class="icon"><img src="Envelope open text.png" alt="phone icon"></div>
+                    <div class="text-wrapper">
+                        <div class="header">
+                            E-MAIL
+                        </div>
+                        <div class="body">
+                        info@company.com
+                        </div>
+                    </div>
+                    <div class="icon"><img src="Envelope open text.png" alt="phone icon"></div>
+                    <div class="text-wrapper">
+                        <div class="header">
+                            HELPDESK
+                        </div>
+                        <div class="body">
+                        https://helpdesk.com
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="map"></div>
