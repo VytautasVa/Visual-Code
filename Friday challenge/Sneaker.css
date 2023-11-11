@@ -1,14 +1,14 @@
 *{box-sizing: border-box;}
 body{
-background-color: #C174C3;
+    background-color: #C174C3;
 }
 .main{
-width: 1440px;
-height: 820px;
-flex-shrink: 0;
-background: var(--shade-background, #F9F9F9);
-position: relative;
-margin: 20px 20px;
+    width: 1440px;
+    height: 820px;
+    flex-shrink: 0;
+    background: var(--shade-background, #F9F9F9);
+    position: relative;
+    margin: 20px 20px;
 }
 .logo{
     position: absolute;
@@ -32,28 +32,39 @@ margin: 20px 20px;
     font-weight: 600;
     line-height: normal;
 }
+.nav{
+    width: 452px;
+    height: 25px;
+}
 ul{             /*negalima aprašynėti .nav . ar galima padaryti, kad galėtu aprašinėti viską kas yra div'e? */
-display: flex;
-display: inline-flex;
-padding: 24px 474px;
-align-items: center;
-gap: 32px;
-height: 25px;
-width: 452px;
-list-style: none;
+    display: flex;
+    display: inline-flex;
+    padding: 40px 474px;
+    align-items: center;
+    gap: 32px;
+    height: 25px;
+    width: 452px;
+    list-style: none;
 
 }
 a{
-text-decoration: none;
-color: var(--neutral-dark, #111);
-font-family: 'Jost', sans-serif;
-font-size: 17px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
+    text-decoration: none;
+    color: var(--neutral-dark, #111);
+    font-family: 'Jost', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 .icons{
-
+    width: 184px;
+    height: 28px;
+    padding: 0px 10px;
+}
+#icons2 {
+    display: flex;
+    gap: 24px;
+    padding: 24px 1075px;
 }
 .left{
 
