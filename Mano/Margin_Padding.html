@@ -5,34 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margin_Padding</title>
     <style>
+div{
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+    }
 .pirmas{
-    width: 100px;
-    height: 100px;
+    
     background-color: aqua;
+    margin:  10px 10px 100px 100px;
+    border: 3px dotted black;
+    
 }
 .antras{
-    width: 100px;
-    height: 100px;
+    
     background-color: rgb(0, 255, 0);
+    padding: 10px 10px 100px 100px;
+    border: 1px solid black;
 
 }
 .trečias{
-    width: 100px;
-    height: 100px;
     background-color: rgb(166, 255, 0);
+    border: 5px double black;
+
 }
 .ketvirtas{
-    width: 100px;
-    height: 100px;
+    position: relative;
     background-color: rgb(255, 0, 170);
+
+}
+.iner{
+    position: absolute;
+    background-color: antiquewhite;
+    height: 50%;
+    width: 50%;
+    margin: -10px 11px 20px 30px;
+
 }
     </style>
 </head>
 <body>
-    <div class="pirmas"></div>
-    <div class="antras"></div>
-    <div class="trečias"></div>
-    <div class="ketvirtas"></div>
+    <div class="pirmas">Pirmas <br>margin</div>
+    <div class="antras"><small>Antras</small><br>padding</div>
+    <div class="trečias">Trečias</div>
+    <div class="ketvirtas">
+        <span>Ketvirtas </span> 
+        <div class="iner">150</div>
+    </div>
 
 
 

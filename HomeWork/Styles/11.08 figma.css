@@ -1,7 +1,7 @@
 *{box-sizing: border-box;}
 body{
     margin: 0;
-    background: url(bacgound.png) no-repeat center center /cover; /*su cover ne per visą ekraną lieka apačia, panaikinus coverdar sumažėja*/
+    background: url(../Images/bacgound.png) no-repeat center center /cover; /*su cover ne per visą ekraną lieka apačia, panaikinus coverdar sumažėja*/
 }
 .main{
     position: relative;
@@ -44,7 +44,7 @@ body{
     
     }
 .map{
-    background-image: url(map.png);
+    background-image: url(../Images/map.png);
     width: 50%;
 /* height: 100%; laikina */
 }
@@ -68,7 +68,7 @@ body{
 form{
     font-family: 'Inter', sans-serif;
     display: flex;
-    /* height: 55px; ???*/
+    height:auto; 
     width: 100%;
     padding: 12px 0px;
     flex-direction: column;
