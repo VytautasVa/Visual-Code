@@ -1,0 +1,192 @@
+body{
+    background-color: black;
+}
+.main{
+max-width: 1366px;
+display: flex;
+position: relative;
+}
+    .left{
+    /* min-width: 370px;
+    width:36.83%; */
+    flex: 0 2 500px;
+    
+    float: left;
+    background-image: url(left.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    }
+        .textbox{
+            display: flex;
+            padding: 36px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            padding-top: 50px;
+        }
+            .logo{
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+            .text{
+                font-weight: 500;
+                color:white;
+                font-size: 20px;
+                line-height: 26px;
+                padding-left: 20px;
+                letter-spacing: 1px;
+            }
+    .rigth{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+        .form{
+            min-height:768px ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            
+            
+        }
+            .title{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                align-self: flex-start;
+                margin: 0 0 24px;
+            }
+                .title h1{
+                    color: var(--gray-cool-gray-800, #1F2937);
+                    text-align: center;
+                    font-family: Open Sans;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    margin: 0;
+                }
+                .title h2{
+                    color: var(--gray-cool-gray-500, #6B7280);
+                    text-align: center;
+                    font-family: Open Sans;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    margin: 0;
+                }
+            .singin{
+                display: flex;
+                justify-content: center;
+                gap: 12px;
+                align-self: stretch;
+            }
+                .google button{
+                    display: flex;
+                    height: 48px;
+                    padding: 25px;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex: 1 0 0;
+                    border-radius: 4px;
+                    background: #4285F4;
+                    color: var(--colors-white, #FFF);
+                    text-align: center;
+                    font-family: Open Sans;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 26px;
+                }
+                
+                .facebook {
+                    display: flex;
+                    height: 48px;
+                    padding: 2px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 4px;
+                    background: #ECF2FC;
+                    
+                }
+            .or{
+
+            }
+            .input{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 5px;
+                border: 1px solid #E5E7EB;
+                background: #FFF;
+            }    
+                input{
+                    border: none;
+                    width: 100%;
+                }
+            
+            .forget{
+                display: flex;
+                padding: 6px;
+                align-items: center;
+                gap: 4px;
+                align-self: stretch;
+            }
+                .password{
+                    color: var(--gray-cool-gray-500, #6B7280);
+                    font-family: Open Sans;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 20px;
+                }
+                .click{
+                    text-decoration: none;
+                    color: var(--primery-100, #6D58BA);
+                    font-family: Open Sans;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 20px; 
+                }
+            .continue{
+                display: flex;
+                height: 48px;
+                justify-content: center;
+                align-items: center;
+                align-self: stretch;
+                border-radius: 6px;
+                background: var(--primery, #724DFF);
+            }
+            .continue button{
+                border: none;
+                background: var(--primery, #724DFF);
+            }
+            .support{
+                color: var(--primery-100, #6D58BA);
+                font-family: Open Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26px;
+            }
+            a{
+                text-decoration: none;
+            }
+
+@media screen and (max-width: 768px) {
+    
+    
+    .left .text{
+        display: none;
+    }
+}
+    
+                
+                
