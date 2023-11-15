@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="Pic/icon11.14.png"> <!--ikonos ant naršyklės tabo uždėjimas-->
+    <style>
+body {
+        margin: 20px;
+    }
+    /*------------------------transition-opacity---------------------------------------*/
+    .box {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(43, 226, 58);
+        transition: all 1s ease-in-out; /*background-color*/
+        position: relative;
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+.box:hover {
+        background-color: rgb(204, 198, 198);
+        width: 500px;
+        height: 500px;
+        top: 50px;
+        left: 50px;
+        opacity: 0.8;
+        /* transition: background-color 2s ease-out; */
+    }
+    /*-------------------------------Overflow-----------------------------------*/
+.boxOverflow {
+        width: 300px;
+        height: 300px;
+        /*visible - standartinė rikšmė
+                            hidden - paslepia perteklinį turinį*/
+        overflow: scroll; /*galima atskirai x ir y ašims*/
+    }
+.wide{
+    width: 400px;
+}
+    /*-------------------------------input elemento stilizavimas-----------------------------------*/  
+input[type="text"]{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(216,216,216);
+}
+input[type="text"]:focus{
+outline:5px solid red;
+color: blueviolet;
+}
+    /*-------------------------------textarea----------------------------------*/
+textarea{
+    resize:none ; /*galima pasirinkti horizontal; vertical; none (kad negal4tu judinti)*/
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 10px;
+    
+}
+/*---------------------------Text formatting--------------------------------------*/
+.leter-spacing{/*tarpai tarp raidžių*/
+    letter-spacing: 10px }
+.text-indent{/*pirmos eilutės teksto atitraukimas*/
+    text-indent: 100px;}
+.tab-size{
+    white-space: nowrap} 
+    /*wrap tekstasperšoka į kitą eilutę, no wrap neperšoka*/
+    /*tab-size: 0.5; */
+
+
+
+.text-shadow{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.705);
+}
+.text-transform{
+    text-transform: uppercase; /*upercase- didžiosios raidės;
+                                lowercase -mažosios raidės;    
+                                capitalize -kėkienas žodis prasideda vis didžiaja raide*/
+}
+
+.word-spacing{
+    word-spacing: 50px;
+}
+
+</style>
+</head>
+<body>
+    <h1>Turinio animavimas užvedus pelę ar kitu veiksmu</h1>
+    <div class="box">
+        Animacijų pasirinkimas <a href="https://animate.style/#usage" target="_blank">https://animate.style/#usage</a>
+    </div>
+    <hr>
+    <h1>Turinio sutalpinimas su slinkties juosta</h1>
+    <div class="boxOverflow">
+        <div class="wide">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro optio
+        veritatis sunt eaque amet id voluptates magnam autem iusto tempora
+        reiciendis error aliquam natus maiores odio omnis iste, laborum minima.lor
+        Lorem ipsum dolor sit amet consectetur adipis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis molestias vel aperiam debitis itaque, sit cumque exercitationem ut corrupti iste esse quo vero obcaecati deserunt maxime quas iusto. Ipsa, quaerat.icing elit. Aut sit sed porro
+        incidunt eaque aliquid, provident, laboriosam vitae omnis modi, commodi
+        rem odio autem culpa temporibus non voluptatem eius quas. Lorem ipsum
+        dolor sit, amet consectetur adilopisicing elit. Esse aspernatur odit
+        placeat iure illo! Blanditiis, voluptatibus ullam, debitis qui voluptatum
+        beatae eligendi nesciunt at nemo eaque officia quod quam repellat. Lorem
+        ipsum dolor sit, amet consectetur adipisicing elit. Minima quae sequi
+        nihil fuga odit, non beatae alias ab ipsum molestiae unde nobis asperiores
+        nulla blanditiis vel provident repudiandae illo eligendi.
+        </div>
+    </div>
+    <hr>
+    <h1> Input elemento stilizavimas</h1>
+    
+    <input type="text" />
+    <hr>
+    <h1>Textarea</h1>
+
+    <textarea placeholder="Įveskite tekstą" id="" cols="30" rows="10"></textarea>
+    <hr>
+    <p class="leter-spacing">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi molestiae natus suscipit iste culpa ullam amet aliquid maiores veniam fuga at molestias quis temporibus, perspiciatis dicta aperiam harum voluptatibus omnis neque vel inventore. A quae deserunt tempore eos cumque illo, facere ipsum nostrum officia ab ipsa dolor magnam alias. Provident! 
+    </p>
+    <p class="text-indent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum, ducimus modi temporibus exercitationem earum cum commodi voluptatem, est reiciendis optio rem, dolorem maxime fugiat debitis vitae consequatur saepe vel voluptates illo maiores asperiores ipsam ut dignissimos. Similique possimus sapiente ad officiis fugit id nulla doloribus fugiat ut sit modi molestiae nesciunt odio delectus quam sunt deleniti magni facere mollitia adipisci in reprehenderit et, consequatur enim! Corporis vel, laboriosam enim quaerat optio ratione voluptate sed nostrum reiciendis quis temporibus dolor, consectetur nesciunt quae cupiditate iusto adipisci dolorem deleniti cum, distinctio esse officia neque. Numquam illum maiores harum at unde impedit.
+    </p>
+    <p class="tab-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam numquam ad maxime harum,d a vero nam accusantium autem officiis aliquam!
+    </p>
+    <h1>test</h1>
+    <p class="text-shadow">
+        Lorem ipsum dalsdkaksdkasdlklkasdlkasdlkolor, sit amet consectetur adipisicing elit. Dolorum itaque dolore cum autem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui, culpa in voluptate provident reprehenderit doloremque ratione soluta eos consectetur atque voluptates ipsa temporibus nesciunt, quia adipisci? Nemo, numquam dolore!
+    </p>
+    <hr>
+    <p class="text-transform">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, recusandae facere ex excepturi nesciunt aspernatur accusantium ipsa quia dolorum, officia reprehenderit asperiores consectetur voluptas voluptatum distinctio quos perspiciatis, ea ab.
+    </p>
+    <p class="word-spacing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos qui eveniet inventore incidunt sequi eum officia ullam exercitationem vitae? Modi tempore sint blanditiis atque libero nihil placeat dolorum reiciendis nesciunt.</p>
+</body>
+</html>

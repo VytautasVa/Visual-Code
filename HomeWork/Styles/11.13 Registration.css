@@ -68,7 +68,7 @@ input{
     border: 1px solid #E5E7EB;
     background: #FFF;
 }
-#continue{
+.continue{
     display: flex;
     position: relative;
     height: 48px;

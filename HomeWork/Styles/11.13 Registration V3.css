@@ -1,0 +1,95 @@
+body{
+    background-color: black;
+}
+.main{
+max-width: 1366px;
+display: flex;
+
+}
+.left{
+
+width:36.83%;
+float: left;
+background-image: url('../Images/left13d.png');
+background-position: center;
+background-repeat: no-repeat;
+}
+.rigth{
+    height:768px ;
+    width:63.17%;
+    background-color: white;
+    float: right;
+    margin: 0 auto;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.form{
+    width: 340px;
+    height: 387px;
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+        .title h1{
+            color: var(--gray-cool-gray-800, #1F2937);
+            text-align: center;
+            font-family: Open Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .title h2{
+            color: var(--gray-cool-gray-500, #6B7280);
+            text-align: center;
+            font-family: Open Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+    .singin{
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+    }
+        .google button{
+            display: flex;
+            height: 48px;
+            padding: 2px;
+            justify-content: center;
+            align-items: center;
+            flex: 1 0 0;
+            border-radius: 4px;
+            background: #4285F4;
+            color: var(--colors-white, #FFF);
+            text-align: center;
+            font-family: Open Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px; /* 162.5% */
+        }
+        .facebook {
+            display: flex;
+            height: 48px;
+            padding: 2px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background: #ECF2FC;
+            
+        }
