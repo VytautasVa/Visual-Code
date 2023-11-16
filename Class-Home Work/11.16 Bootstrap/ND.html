@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+    <style>
+        body{
+            background-color: plum;
+        }
+        .left {
+            border-top: 1px solid rgb(188, 187, 187);
+        }
+
+        .rigth {border-top: 1px solid rgb(188, 187, 187);
+            border-bottom: 1px solid rgb(188, 187, 187);
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex p-5"> <!--main-->
+        <div class="col-md-8 bg-white py-5 px-4 rounded-start"><!--Left-->
+            <div class="d-flex justify-content-between align-items-center"> <!--Header-->
+                <h1 class="fw-bold">Shoping Cart</h1>
+                <p class="text-secondary fw-semibold mt-3">3 items</p>
+            </div><!--Header-->
+            <div class="d-flex justify-content-between mt-5 py-4 align-items-center left"><!--1st.line-->
+                <div><img src="T-Shirt.jpg" alt="T-Shirt" style="width: 80px; height: 80px"></div>
+                <div>
+                    <p class="fw-semibold text-secondary">Shirt</p>
+                    <p class="fw-semibold">Cotton T-shirt</p>
+                </div>
+                <div>
+                    <input class="form-control" type="number" value="0" min="-1" max="13" style="text-align: center; width: 80%;">
+                </div>
+                <div class="mt-3">
+                    <p class="fw-semibold text-secondary">&euro;24.00</p>
+                </div>
+                <div class="fs-3">
+                    <p class="fw-semibold text-secondary mt-3"><i class="bi bi-x"></i></p>
+                </div>
+            </div><!--1st.line-->
+            <div class="d-flex justify-content-between mt-5 py-4 align-items-center left"><!--2st.line-->
+                <div><img src="T-Shirt2.jpg" alt="T-Shirt" style="width: 80px; height: 80px"></div>
+                <div>
+                    <p class="fw-semibold text-secondary">Shirt</p>
+                    <p class="fw-semibold">Cotton T-shirt</p>
+                </div>
+                <div>
+                    <input class="form-control" type="number" value="0" min="-1" max="13" style="text-align: center; width: 80%;">
+                </div>
+                <div class="mt-3">
+                    <p class="fw-semibold text-secondary">&euro;44.00</p>
+                </div>
+                <div class="fs-3">
+                    <p class="fw-semibold text-secondary mt-3"><i class="bi bi-x"></i></p>
+                </div>
+            </div><!--2st.line-->
+            <div class="d-flex justify-content-between mt-5 py-4 align-items-center left"><!--3st.line-->
+                <div><img src="T-Shirt3.jpg" alt="T-Shirt" style="width: 80px; height: 80px"></div>
+                <div>
+                    <p class="fw-semibold text-secondary">Shirt</p>
+                    <p class="fw-semibold">Cotton T-shirt</p>
+                </div>
+                <div>
+                    <input class="form-control" type="number" value="0" min="-1" max="13" style="text-align: center; width: 80%;">
+                </div>
+                <div class="mt-3">
+                    <p class="fw-semibold text-secondary">&euro;69.00</p>
+                </div>
+                <div class="fs-3">
+                    <p class="fw-semibold text-secondary mt-3"><i class="bi bi-x"></i></p>
+                </div>
+            </div><!--3st.line-->
+            <div><!--Footer-->
+                
+                <a href="#" class="btn fw-bold"><i class="bi bi-arrow-left"></i>Back to shop</a>
+            </div><!--Footer-->
+        </div><!--Left-->
+        <div class="col-md-4 bg-secondary-subtle py-5 px-5 rounded-end"><!--Right-->
+            <div class="mt-3"><h2 class="text-black-50 fw-bold">Summary</h2></div>
+            <div class="mt-5 rigth">
+                <div class="d-flex justify-content-between mt-4 align-items-center">
+                    <p class="text-black-50">ITEMS 3</p>
+                    <p class="text-black-50">&euro;137.00</p>
+                </div>
+                <div class="mt-4 d-block">
+                    <h5 class="text-black-50">SHIPPING</h5>
+                    <select class="form-select bg-secondary-subtle border border-secondary-subtle" aria-label="Default select example">
+                        <option selected>Standart Delivery &euro;15.00</option>
+                        <option value="1">Collect in Store &euro;0.00</option>
+                        <option value="2">Economy Delivery &euro;5.00</option>
+                    </select>
+                </div>
+                <div class="mt-5 f-block mb-5">
+                    <h5 class="text-black-50">GIVE CODE</h5>
+                    <input class="form-control bg-secondary-subtle border border-secondary-subtle" type="text" placeholder="Enter your code">
+                </div>
+                <div class="mt-5 rigth"></div>
+                <div class="d-flex justify-content-between">
+                    <p class="text-black-50">TOTAL PRICE</p>
+                    <p class="text-black-50">&euro;152.00</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-4">
+                    <button type="button" class="btn btn-dark btn-lg" style="width: 100%;">Register</button>
+                </div>
+            </div>
+
+        </div><!--Right-->
+    </div><!--main-->
+</body>
+</html>
