@@ -44,6 +44,7 @@ position: relative;
         align-items: center;
         
         
+        
     }
         .form{
             min-height:768px ;
@@ -115,7 +116,6 @@ position: relative;
                     
                 }
             .or{
-
             }
             .input{
                 display: flex;
@@ -186,6 +186,7 @@ position: relative;
     .left .text{
         display: none;
     }
+    ;
 }
     
                 
