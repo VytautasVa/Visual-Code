@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    
+    <style>
+        .main{
+            width: ;
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            background-color: #faf8ef;
+            font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        h1{
+            font-size: 80px;
+            font-weight: bold;
+            margin: 0;
+            display: block;
+            float: left;
+            color: #776e65;
+            
+        }
+        .text a{
+            color:#776e65;
+            font-weight: bold;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .points{
+            display: flex;
+            position: relative;
+            gap: 10px;
+            padding: 15px 25px;
+            
+           
+        }
+            .score{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+                background-color: #bbada0;
+                color: white;
+                font-size: 25px;
+                padding: 15px 25px;
+                height: 100px;
+                width: 150px;
+                border-radius: 5px;
+            }
+            .best{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+                background-color: #bbada0;
+                color: white;
+                font-size: 25px;
+                padding: 15px 25px;
+                height: 100px;
+                width: 150px;
+                border-radius: 5px;
+                
+            }
+            .new button{
+                
+                background-color: #8f7a66;
+                border-radius: 3px;
+                padding: 0 20px;
+                height: 40px;
+                cursor: pointer;
+                flex-shrink: 0;
+            }
+        .new a{text-decoration: none; color: #f9f6f2; }
+
+        .container{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border-radius: 6px;
+            padding: 15px;
+            border-color: #bcaca0;
+            background-color:#bcaca0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .iner{
+            display: flex;
+            font-size: 45px;
+            width: 107px;
+            height: 107px;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .iner1{
+            background-color: #ccc1b4;
+        }
+        .iner2{
+            background-color: #eee4da ;
+            color:#ccc1b4 ;
+        }
+        .iner4{
+            background-color:#eee1ca ;
+            color:#ccc1b4 ;
+        }
+        .iner8{
+            background-color:#f3b27a ;
+            color:#f8f6f2 ;
+        }
+        .iner32{
+            background-color:#f77c5f ;
+            color:#f8f6f2 ;
+        }
+        .iner128{
+            background-color:#edd073 ;
+            color:#f8f6f2 ;
+        }
+        .iner256{
+            background-color:#eecc62;
+            color: #f8f6f2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main"><!--main-->
+        <div class="text">
+            <h1>2048</h1>
+            <p>Join the titles, get to 2048!</p>
+            <a href="#how">How to play &#8594;</a>
+            
+        </div>
+        <div class="points">
+            <div class="score">
+                <p>SCORE</p>
+                <p>2628</p>
+            </div>
+            <div class="best">
+                <p>BEST</p>
+                <p>8712</p>
+            </div>
+        </div>
+        <div class="new">
+            <button><a href="https://play2048.co/" target="_blank">New Game</a></button>
+        </div>
+        <div class="container">
+            <div class="iner iner1">&nbsp;</div>
+            <div class="iner iner4">4</div>
+            <div class="iner iner8">8</div>
+            <div class="iner iner4">4</div>
+            <div class="iner iner1">&nbsp;</div>
+            <div class="iner iner2">2</div>
+            <div class="iner iner32">32</div>
+            <div class="iner iner8">8</div>
+            <div class="iner iner1">&nbsp;</div>
+            <div class="iner iner1">&nbsp;</div>
+            <div class="iner iner1">&nbsp;</div>
+            <div class="iner iner128">128</div>
+            <div class="iner iner1">&nbsp;</div>
+            <div class="iner iner1">&nbsp;</div>
+            <div class="iner iner2">2</div>
+            <div class="iner iner256">256</div>
+        </div>
+        <div id="how">
+            <p>HOW TO PLAY: Use your arrow keys to move the tiles. Tiles with the same number merge into one when they touch. Add them up to reach 2048!
+            Start playing →</p>
+        </div>
+    </div><!--main-->
+</body>
+</html>

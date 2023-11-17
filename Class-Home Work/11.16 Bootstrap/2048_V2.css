@@ -1,0 +1,114 @@
+.main{
+    width: ;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: #c0a738;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    padding: 10px;
+        
+}
+.A{
+    
+    width: 220px ;
+    height: 90px;
+    background-color:black ;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.B{
+    position: relative;
+    align-self: flex-end;
+    
+    width: 220px;
+    height: 50px;
+    background-color: olivedrab;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.C{
+    position: relative;
+    left: 300px;
+    top: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.D{
+    position: relative;
+    align-self: center;
+    width: 450px;
+    height: 100px;
+    background-color: rgb(23, 0, 128);
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 6px;
+    padding: 15px;
+    border-color: #bcaca0;
+    background-color:#bcaca0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.iner{
+    display: flex;
+    font-size: 45px;
+    width: 107px;
+    height: 107px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.iner1{
+    background-color: #ccc1b4;
+}
+.iner2{
+    background-color: #eee4da ;
+    color:#ccc1b4 ;
+}
+.iner4{
+    background-color:#eee1ca ;
+    color:#ccc1b4 ;
+}
+.iner8{
+    background-color:#f3b27a ;
+    color:#f8f6f2 ;
+}
+.iner32{
+    background-color:#f77c5f ;
+    color:#f8f6f2 ;
+}
+.iner128{
+    background-color:#edd073 ;
+    color:#f8f6f2 ;
+}
+.iner256{
+    background-color:#eecc62;
+    color: #f8f6f2;
+}
