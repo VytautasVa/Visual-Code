@@ -22,7 +22,6 @@ body{
   flex-direction: column;
   color: #776e65;
   font-size: 18px;
-  
   }
   .A h1{
     font-size: 80px;
@@ -36,19 +35,16 @@ body{
   }
 
 .B {
-    
   position: relative;
   align-self: end;
-  
   /* left: -10px;*/
   top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  
-}
-    .score{
+  }
+  .score{
         background-color: #bcaca0;
         color:white ;
         font-size: 25px;
@@ -57,8 +53,8 @@ body{
         border-radius: 3px;
         font-weight: bold;
         padding: 5px 25px;
-    }
-        .score h4{
+  }
+    .score h4{
             margin: 0;
             font-size: 13px;
             color: #eee4da;
@@ -73,7 +69,7 @@ body{
         font-weight: bold;
         padding: 5px 25px;
     }
-        .best h4{
+    .best h4{
             margin: 0;
             font-size: 13px;
             color: #eee4da;
@@ -83,7 +79,7 @@ body{
     position: relative;
     align-self:end;
     display: flex;
-    
+    margin: 0 0 30px;
     /* width: 150px;
     height: 40px; */
     /* left: 370px;
