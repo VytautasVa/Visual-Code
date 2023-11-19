@@ -1,0 +1,121 @@
+body{
+    
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px ;
+    
+}
+    .logo{
+        color: var(--neutral-dark, #111);
+        font-family: Jost;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+        .dott{
+            color: #C8815F;
+            font-family: Jost;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        } 
+    .pages ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+        .nav-list1 a{
+            color: var(--neutral-dark, #111);
+            font-family: Jost;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    .icons ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+    }
+section{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    /* width: 400px; */
+    height: 308px;
+    margin: 120px auto auto 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+    .text1{
+        color: var(--neutral-dark, #111);
+        text-align: center;
+        font-family: Jost;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0 250px 0 0;  /*?*/
+    }
+    .text2{
+        color: var(--neutral-dark, #111);
+        font-family: Sofia Pro;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 64px; /* 114.286% */
+        letter-spacing: -2.24px;
+        text-transform: uppercase;
+    }
+    button{
+        color: var(--primary-dark, #111);
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        display: inline-flex;
+        padding: 12px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 4px;
+        border: 1px solid var(--primary-dark, #111);
+        width: 140px;
+        height: 48px;
+    }
+    .sneaker{
+        width: 813.582px;
+        height: 653.461px;
+        
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dots{
+        width: 85px;
+        height: 20px;
+        flex-shrink: 0;
+        
+    }

@@ -1,6 +1,14 @@
 body{
     background-color: rgba(210, 201, 255, 1);
 }
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
 .main{
     height:700px ;
     width: 970px;
@@ -17,36 +25,100 @@ body{
     flex-direction: column;
     align-items: center;
 }
+        img{
+            width: 75px;
+            height: 90px;
+        }
     .line1{
         width:570px ;
         height:140px ;
-        background-color:rgba(255, 255, 0, 0.507) ;
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border-bottom: 1px solid grey;
     }
+    .text{margin: 0 0 0 -70px;}
     .line2{
         width:570px ;
         height:140px ;
-        background-color:rgba(0, 255, 13, 0.507) ;
-    }
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
+        }
+        
     .line3{
         width:570px ;
         height:140px ;
-        background-color:rgba(255, 0, 0, 0.507) ;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
     }
     .line4{
         width:570px ;
         height:140px ;
-        background-color:burlywood ;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
     }
     .line5{
         width:570px ;
         height:140px ;
-        background-color:rgba(0, 140, 255, 0.507) ;
+        display: flex;
+        align-items: center;
     }
 .right{
     background-color: rgba(234, 232, 232, 1);
     height:700px ;
     width: 330px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+    }
+    .right1{
+        width:280px;
+        height:110px ;
+        border-bottom: 1px solid grey;
+    }
+    .right2{
+        width:280px;
+        height:330px ;
+        border-bottom: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: space-evenly;
+        
+    }
+        .items{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .right2 select{
+            width: 225px ;
+            height: 40px ;
+        }
+        .right2 input{
+            width: 225px ;
+            height: 40px ;
+        }
+    .right3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+    .right button {
+        background-color: black;
+        color: white;
+        width: 225px;
+        height: 50px;
+    }
