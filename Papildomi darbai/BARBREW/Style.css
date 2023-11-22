@@ -1,0 +1,126 @@
+body{background-color: black;}
+a{text-decoration: none;}
+.main{
+    width:430px ;
+    height: 932px;
+    border-radius: 50px;
+    background: #FFF;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.up{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    background: #F4C314;
+    margin: -200% 0% 0% 90%;
+    
+}
+.main> a, .mug{
+    position: absolute;
+    width: 133.593px;
+    height: 150px;
+    top: 25%;
+}
+.text{
+    position: absolute;
+    color: #000;
+    font-family: Train One;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 46%;
+}
+.text2{
+    position: absolute;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 8px;
+    top: 54%;
+}
+.bottom{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 500px;
+    background: #F4C314;
+    margin: 0% 100% -230% 0%;
+}
+/*1-st page */
+.main1{
+    width:430px ;
+    height: 932px;
+    border-radius: 50px;
+    background: #FFF;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.mug2{
+    position: absolute;
+    width: 133.593px;
+    height: 150px;
+    top: 15%;
+}
+.text3{
+    position: absolute;
+    color: #000;
+    font-family: Train One;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 31%;
+}
+.text4{
+    position: absolute;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 8px;
+    top: 39%;
+}
+.bottom2{
+    position: absolute;
+    width: 430px;
+    height: 485px;
+    /* flex-shrink: 0; */
+    border-radius: 50px;
+    border: 1px solid #000;
+    background: #F4C314;
+    top: 50%;
+    
+}
+.bottom2 > h1{
+
+}
+.bottom2 > p{
+
+}
+.buttons1 > .signin {
+
+}
+.buttons1 > .signup{
+
+}
+.main1 > a{
+
+}
