@@ -2,7 +2,7 @@ body{background-color: black;}
 a{text-decoration: none;}
 .main{
     width:100% ;
-    min-height: 932px;
+    height: 100%;
     border-radius: 50px;
     background: #FFF;
     /* margin: 50px; */
