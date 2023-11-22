@@ -1,11 +1,11 @@
 body{background-color: black;}
 a{text-decoration: none;}
 .main{
-    width:430px ;
-    height: 932px;
+    width:100% ;
+    min-height: 932px;
     border-radius: 50px;
     background: #FFF;
-    margin: 50px;
+    /* margin: 50px; */
     display: flex;
     flex-direction: column;
     overflow: hidden;
