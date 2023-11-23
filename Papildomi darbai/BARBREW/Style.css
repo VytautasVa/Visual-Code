@@ -1,7 +1,8 @@
 body{background-color: black;}
 a{text-decoration: none;}
 .main{
-    width:100% ;
+    /* width:100% ; */
+    max-width: 430px;
     height: 100vh;
     border-radius: 5%;
     background: #FFF;
@@ -26,8 +27,12 @@ a{text-decoration: none;}
     position: absolute;
     width: 133.593px;
     height: 150px;
-    top: 25%;
+    top: 13vh;
 }
+/* .main> a, .mug:hover{
+    width: 266px;
+    height: 300px;
+} */
 .text{
     position: absolute;
     color: #000;
@@ -36,7 +41,7 @@ a{text-decoration: none;}
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    top: 46%;
+    margin-top: 0vh;
 }
 .text2{
     position: absolute;
@@ -47,7 +52,7 @@ a{text-decoration: none;}
     font-weight: 500;
     line-height: normal;
     letter-spacing: 8px;
-    top: 54%;
+    top: 55vh;
 }
 .bottom{
     position: absolute;
@@ -59,7 +64,8 @@ a{text-decoration: none;}
 }
 /*------------------1-st page---------------------- */
 .main1{
-    width:100% ;
+    /* width:100% ; */
+    max-width: 430px;
     height: 100vh;
     border-radius: 5%;
     background: #FFF;
@@ -74,7 +80,7 @@ a{text-decoration: none;}
     position: absolute;
     width: 133.593px;
     height: 150px;
-    top: 15%;
+    margin-bottom: 60vh;
 }
 .text3{
     position: absolute;
@@ -84,7 +90,7 @@ a{text-decoration: none;}
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    top: 31%;
+    margin-bottom: 33vh;
 }
 .text4{
     position: absolute;
@@ -95,7 +101,7 @@ a{text-decoration: none;}
     font-weight: 500;
     line-height: normal;
     letter-spacing: 8px;
-    top: 39%;
+    margin-bottom: 22vh;
 }
 .bottom2{
     position: absolute;
