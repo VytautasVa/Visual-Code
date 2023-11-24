@@ -10,7 +10,6 @@ a {
   height: 100vh;
   border-radius: 5%;
   background: #fff;
-  /* margin: 50px; */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -32,11 +31,13 @@ a {
   width: 133.593px;
   height: 150px;
   top: 13vh;
-}
+  }
+
 /* .main> a, .mug:hover{
     width: 266px;
     height: 300px;
-} */
+  } */
+
 .text {
   position: absolute;
   color: #000;
@@ -171,7 +172,7 @@ a {
   line-height: normal;
   align-self: center;
 }
-/*------------------2 page SignIn---------------------- */@note
+/*------------------2 page SignIn---------------------- */
 .main2 {
   background: #f4c314;
   max-width: 430px;
@@ -405,7 +406,6 @@ a {
   line-height: normal;
   padding: 30px;
 }
-
 .signup3 {
   width: 350px;
   height: 60px;
@@ -431,7 +431,176 @@ a {
   background-color:#eee;
   
 }
-
 /*------------------4-in page beer---------------------- */
+.main4{
+  background:#EEE;
+  max-width: 430px;
+  /* height: 100vh; */
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+.top4{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 250px;
+  margin-top: 50px;
+} 
+  .main4> img{
+    margin-top: 40px;
+    border-radius: 25px;
+  }
 
+.meniu{
+  display: flex;
+  margin-top: 30px;
+  gap: 5px;
+  
 
+}
+.meniu> button{
+  width: 70px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #D9D9D9;
+  box-shadow: 3px 3px 6.1px 0px rgba(0, 0, 0, 0.25), 0px 2px 5.5px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.meniu> button:hover{
+  background: #F4C314;
+}
+.meniu> button> a{
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px; /* 116.667% */
+  letter-spacing: -0.32px;
+}
+.beer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap:30px ;
+  margin-top: 30px;
+}
+.beer> .select{
+  width: 184px;
+  height: 230px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #F4C314;
+  box-shadow: 3px 5px 6.1px 0px rgba(0, 0, 0, 0.25), 0px 1px 9.3px 0px rgba(0, 0, 0, 0.25) inset;
+  display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 5px auto auto 15px;
+    }
+    .heart{
+      width: 31px;
+      height: 31px;
+      background-color: rgba(179, 177, 177, 0.671);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+    }
+    
+    .info> button:active,
+    button:focus    {
+      background-color: #F94949;
+      
+    }
+    .info> a> h3{
+      color: #000;
+      text-align: start;
+      font-family: Allerta Stencil;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px; /* 70% */
+      letter-spacing: -0.32px;
+    }
+    .info> h4> a{
+      color: #000;
+      text-align: start;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 21px; /* 105% */
+      letter-spacing: -0.32px;
+    }
+    .info> p> a{
+      color: #FFF;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 21px; /* 84% */
+      letter-spacing: -0.32px;
+    }
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -50px 0 0 -20px;
+    gap: 10px;
+}
+
+/*------------------5-page Corona---------------------- */
+.main5 {
+  background: #f4c314;
+  max-width: 430px;
+  height: 100vh;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+.top5{
+
+}
+.middle5{
+  display: flex;
+  flex-direction: row;
+  
+}
+.left5{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  
+}
+.right5{
+
+}
+.right5> img {
+  
+}
+.bottom5{
+  width: 430px;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: #EEE;
+  box-shadow: 0px 9px 17.5px 0px rgba(0, 0, 0, 0.25) inset;
+}
