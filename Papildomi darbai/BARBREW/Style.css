@@ -24,6 +24,8 @@ a {
   border-radius: 300px;
   background: #f4c314;
   margin: -90vh 0 0 50vh;
+  /* top: -140px;
+  right: -150px; */
 }
 .main > a,
 .mug {
@@ -36,7 +38,7 @@ a {
 /* .main> a, .mug:hover{
     width: 266px;
     height: 300px;
-  } */
+    } */
 
 .text {
   position: absolute;
