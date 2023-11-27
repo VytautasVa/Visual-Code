@@ -61,7 +61,7 @@ body{
     left: 15px;
     border-radius: 50px;
     animation: 1.5s rotate linear infinite;
-    transform-origin: 10px 65px; */
+    transform-origin: 10px 65px; 
 }
 @keyframes rotate {
     to{
