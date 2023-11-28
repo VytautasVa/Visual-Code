@@ -1,4 +1,5 @@
-body{background-color: #0B0B0F;}
+body{background-color: #0B0B0F;
+position: relative;}
 a{text-decoration: none;}
 ul{list-style: none;
     display: flex;
@@ -81,6 +82,7 @@ ul.logout{
     display: flex;
     flex-direction: column;
     max-width: 773px;
+    min-width: 100px;
     padding: 30px;
 }
 .chartA{
@@ -91,7 +93,7 @@ ul.logout{
 .chartA1::before{
     
     content:"";
-    display:block;
+    display:flex;
     width: 60px;
     height: 60px;
     background: url(Pic/moneys\ 1.svg)no-repeat;
@@ -155,6 +157,33 @@ ul.logout{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+.chartC >img{
+    width: 90%;
+}
+
+.tokens{
+    position: relative;
+    top: -1010px;
+    left: 1100px;
+    max-width: 284px;
+    /* height: 542px; */
+    flex-shrink: 0;
+    border-radius: 16px;
+    opacity: 0.6;
+    background: #1C1C1C;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    
+}
+.tokens > h3{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
 

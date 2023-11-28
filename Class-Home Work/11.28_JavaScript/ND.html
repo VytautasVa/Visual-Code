@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dicta consequatur adipisci tenetur nulla ut sapiente sed ea neque incidunt!
+
+
+    
+<script>
+    // 1.
+
+    let vardas = "Chuck "
+    console.log(vardas)
+    let raides = vardas.replace(/\s+/g, '').length;
+    // console.log(raides);
+    
+    let pavarde = "Norris"
+    console.log(pavarde)
+    let raides2 = pavarde.replace(/\s+/g, '').length
+    // console.log(raides2)
+
+    console.log(vardas + pavarde)
+
+    if(vardas > pavarde){console.log(pavarde)}
+    else{console.log(vardas)};
+
+    // 2.
+
+    let vardasMano = "Vytautas "
+    let pavardeMano = "Valančauskas "
+    let gimimoMetai = "1985"
+    let dabar = "2023"
+
+    amzius = dabar - gimimoMetai;
+    
+    console.log("Aš esu "+ vardasMano + pavardeMano + ". " + "Man yra "+amzius+" metai.")
+
+    //3.
+
+    let vardas2 = "Jonas"
+    let pavarde2 = "Jonaitis"
+    // let inicialai = vardas2[0+1]+vardas2[1]+pavarde2[0]+pavarde2[1];
+    let inicialai = vardas2.slice(0, 2) + pavarde2.slice(0, 2);
+
+    console.log (inicialai)
+
+
+    //4.
+
+    let kintamasis = vardas.slice(2, 5) + pavarde.slice(3, 6);
+    console.log (kintamasis)
+
+
+    //5.
+
+    let naujaData= "2015-05-12";
+    let menuo = naujaData.slice(5,7);
+    console.log(menuo)
+
+    if (menuo == "01"){console.log("Sausis")};
+    if(menuo == "02"){console.log("Vasaris")};
+    if(menuo == "03"){console.log("Kovas")};
+    if(menuo == "04"){console.log("Balandis")};
+    if(menuo == "05"){console.log("Gegužė")};
+    if(menuo == "06"){console.log("Birželis")};
+    if(menuo == "07"){console.log("Liepa")};
+    if(menuo == "08"){console.log("Rugpjūtis")};
+    if(menuo == "09"){console.log("Rugsėjis")};
+    if(menuo == "10"){console.log("Spalis")};
+    if(menuo == "11"){console.log("Lapkritis")};
+    if(menuo == "12"){console.log("Gruodis")};
+        
+    
+
+</script>
+</body>
+</html>
