@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Namų darbai</h1>
+
+    <script>
+        //6.----
+        let tekstas =  "Once upon a time in hollywood";
+        console.log(tekstas)
+
+        let kitasTekstas = tekstas.replaceAll("O" , "*"). replaceAll("o", "*"); 
+        console.log(kitasTekstas);
+
+        //7.----
+
+        function rand(min, max){
+            return Math.floor(Math.random()*(max-min+1))+min;
+        }
+        let skaicius1 = rand(0,2);
+        let skaicius2 = rand(0,2);
+        let skaicius3 = rand(0,2);
+        let skaicius4 = rand(0,2);
+        
+        console.log(skaicius1)
+        console.log(skaicius2)
+        console.log(skaicius3)
+        console.log(skaicius4)
+
+        let count0 = 0;
+        let count1 = 0;
+        let count2 = 0;
+
+        // Count occurrences
+        if (skaicius1 === 0) {
+            count0++;
+        } else if (skaicius1 === 1) {
+            count1++;
+        } else {
+            count2++;
+        }
+
+        if (skaicius2 === 0) {
+            count0++;
+        } else if (skaicius2 === 1) {
+            count1++;
+        } else {
+            count2++;
+        }
+
+        if (skaicius3 === 0) {
+            count0++;
+        } else if (skaicius3 === 1) {
+            count1++;
+        } else {
+            count2++;
+        }
+
+        if (skaicius4 === 0) {
+            count0++;
+        } else if (skaicius4 === 1) {
+            count1++;
+        } else {
+            count2++;
+        }
+
+        
+        console.log("Count of 0:", count0);
+        console.log("Count of 1:", count1);
+        console.log("Count of 2:", count2);
+
+        
+        //8.-------
+
+        let skaicius21 = rand(0, 4);
+        let skaicius22 = rand(0, 4);
+        console.log("pirmasis skaičius = " + skaicius21);
+        console.log("antrasis skaičius = " + skaicius22);
+
+        let didesnissk = Math.max(skaicius21, skaicius22);
+        let mazesnissk = Math.min(skaicius21, skaicius22);
+
+        if(mazesnissk !==0){
+            let rezultatas = didesnissk / mazesnissk;
+            rezultatas = rezultatas.toFixed(2)
+            console.log("Rezultatas:", rezultatas );
+        }            
+        else{
+            console.log("dalyba iš 0 negalima");
+        }
+        
+        
+        //9.------------------
+
+
+        let skaicius31 = rand(0, 25);
+        let skaicius32 = rand(0, 25);
+        let skaicius33 = rand(0, 25);
+
+        console.log("Pirmas sk."+ skaicius31)
+        console.log("Antras sk."+ skaicius32)
+        console.log("Trecias sk."+ skaicius33)
+        
+        
+        if(skaicius31<skaicius32 && skaicius31>skaicius33 ){
+            console.log("vidurinis skaičius yra:" + skaicius31)
+        }
+        else if(skaicius31>skaicius32 && skaicius31<skaicius33){
+            console.log("vidurinis skaičius yra:" + skaicius31)
+        }
+        if(skaicius32<skaicius31 && skaicius32>skaicius33){
+            console.log("vidurinis skaičius yra:" + skaicius32)
+        }
+        else if(skaicius32>skaicius31 && skaicius32<skaicius33){
+            console.log("vidurinis skaičius yra:" + skaicius32)
+        }
+        if(skaicius33<skaicius31 && skaicius33>skaicius32){
+            console.log("vidurinis skaičius yra:" + skaicius33)
+        }
+        else if(skaicius33>skaicius31 && skaicius33<skaicius32){
+            console.log("vidurinis skaičius yra:" + skaicius33)
+        }
+        
+
+
+        //10.----------------------
+
+        let vardas = "Vardenis";
+        let pavarde = "Pavardenis";
+
+        let zodis = vardas.slice(0, 3)+ pavarde.slice(0, 3);
+        let zodis2 = vardas[0] + pavarde[0];
+
+        console.log(zodis)
+        console.log(zodis2)
+
+
+        //11.-----------------------
+
+        let sk1 = rand(97, 122)
+        let sk2 = rand(97, 122)
+        let sk3 = rand(97, 122)
+        console.log(String.fromCharCode(sk1)+String.fromCharCode(sk2)+String.fromCharCode(sk3))
+        
+
+
+    </script>
+  </body>
+</html>
