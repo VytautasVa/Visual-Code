@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Quiz</h1>
+    <h2>Answer 5 qestions</h2>
+    <p>What is the capital of France?</p>
+    <form id="pirma" >
+        <input type="radio" id="A1" name="capital_of_France" value="A) Berlin"> A) Berlin <br><p id="a1"></p>    <!--Neteisingai-->
+        <input type="radio" id="B1" name="capital_of_France" value="B) London"> B) London <br><p id="b1"></p>    <!--Neteisingai-->
+        <input type="radio" id="C1" name="capital_of_France" value="C) Paris"> C) Paris   <br><p id="c1"></p>    <!--Teisingai-->
+    </form>
+    <br>
+    <p>How many continents are there on Earth?</p>
+    <form id="antra">
+        <input type="radio" id="A2" name="continents_on_Earth" value="A) 5"> A) 5   <br><p id="a2"></p>    <!--Neteisingai-->
+        <input type="radio" id="B2" name="continents_on_Earth" value="B) 7"> B) 7   <br><p id="b2"></p>    <!--Teisingai-->
+        <input type="radio" id="C2" name="continents_on_Earth" value="C) 6"> C) 6   <br><p id="c2"></p>    <!--Neteisingai-->
+    </form>
+    <br>
+    <p>Which planet is known as the Red Planet?</p>
+    <form id="trecia">
+        <input type="radio" id="A3" name="Red_Planet" value="A) Mars"> A) Mars         <br><p id="a3"></p>    <!--Teisingai-->
+        <input type="radio" id="B3" name="Red_Planet" value="B) Jupiter"> B) Jupiter   <br><p id="b3"></p>    <!--Neteisingai-->
+        <input type="radio" id="C3" name="Red_Planet" value="C) Saturn"> C) Saturn     <br><p id="c3"></p>    <!--Neteisingai-->
+    </form>
+    <br>
+    <p> What gas do plants breathe in that humans and animals breathe out?</p>
+    <form id="ketvirta">
+        <input type="radio" id="A4" name="breathe_out" value="A) Oxygen"> A) Oxygen                    <br><p id="a4"></p>     <!--Neteisingai-->
+        <input type="radio" id="B4" name="breathe_out" value="B) Carbon Dioxide"> B) Carbon Dioxide    <br><p id="b4"></p>     <!--Teisingai-->
+        <input type="radio" id="C4" name="breathe_out" value="C) Nitrogen"> C) Nitrogen                <br><p id="c5"></p>     <!--Neteisingai-->
+    </form>
+    <br>
+    <p>Question: What is the largest mammal in the world?</p>
+    <form id="penkta">
+        <input type="radio" id="A5" name="largest_mammal" value="A) Elephant"> A) Elephant        <br><p id="a5"></p>     <!--Neteisingai-->
+        <input type="radio" id="B5" name="largest_mammal" value="B) Blue Whale"> B) Blue Whale    <br><p id="b5"></p>     <!--Teisingai-->
+        <input type="radio" id="C5" name="largest_mammal" value="C) Giraffe"> C) Giraffe          <br><p id="c5"></p>     <!--Neteisingai-->
+    </form>
+    <br>
+    <button onclick="baigti()" class="btn btn-primary" >Baigti</button>
+    <p id="rez"></p>
+
+    <Script src="quiz.js"></Script>
+</body>
+</html>

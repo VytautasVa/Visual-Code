@@ -108,7 +108,11 @@ console.log(roundedSkaicius);
 console.log(roundedSkaicius);
 
 
+console.log("-------Skaičiaus konvertavimas į tekstą--------");
+//Skaičiaus konvertavimas į tekstą---------------------------------------
 
-//---------------------------------------
+let skaiciusX = 5;
+skaiciusX += "";
+console.log(`typeof skaiciusX \t ${skaiciusX}`);
 
 
