@@ -67,7 +67,9 @@ a {
   height: 500px;
   border-radius: 500px;
   background: #f4c314;
-  margin: 0 50vh -90vh 0;
+  /* margin: 0 50vh -90vh 0; */
+  top: 70%;
+  right: 50%;
 }
 /*------------------1-st page---------------------- */
 .main1 {
