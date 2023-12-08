@@ -19,19 +19,14 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-  var zvaigzdes = document.getElementById("zvaigzdes");
-  let zvaigzde = "";
 
-  for (let i = 0; i < 400; i++) {
-    zvaigzde += "*";
-    if ((i + 1) % 50 === 0) {
-      zvaigzde += "\n";
+  let x=10;
+  for(let i = 0; i < x; i++){
+    for(let y=0; y < x; y++){
+      y += "<br>";
+      document.write(y)
     }
   }
-
-  zvaigzdes.textContent = zvaigzde;
-});
 </script>
 </body>
 </html>

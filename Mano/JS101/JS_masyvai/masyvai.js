@@ -1,7 +1,7 @@
 function rand(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;}
 
-// Skaičiaus/Simbolio atvaizdavimas-------------------------
+// Skaičiaus/Simbolio atvaizdavimas masyve-------------------
 
 let a = [2];
 
@@ -22,7 +22,7 @@ let f = String.fromCharCode(100);
 let g = String.fromCharCode(rand(97, 122), " ", rand(65, 90));
 
 let h = [];
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 50; i++) {
     let randomCharCode = rand(97, 122);
     let randomLetter = String.fromCharCode(randomCharCode);
     h += randomLetter;
@@ -38,6 +38,7 @@ console.log(g);
 console.log(h);
 
 // Masyvo operacijos-----------------------------------------
+console.log("------------Masyvo operacijos----------------");
 
 let newTest = [5, 7, 10, 9, 1, 0, 3, 15, 7]
 
@@ -66,7 +67,19 @@ console.log(newTest.join("⇒"));
 
 //Masyvo apsukimas
 newTest.reverse();
-console.log(newTest)
+console.log(newTest);
 
+console.log("--------testas---------------------");
+
+let newTest2 = "Testinis tekstas"
+console.log(newTest2);
+newTest2 += " papildomas tekstas"
+console.log(newTest2)
+newTest2 += 5
+console.log(newTest2)
+
+let newTest3 = [5, 5, 6, 7, 1, 9, 0]
+newTest3.push("Q")
+console.log(newTest3)
 
 // -----------------------------------------
