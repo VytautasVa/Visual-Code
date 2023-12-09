@@ -50,17 +50,59 @@ if(a === 6){
 
 let colorNr = document.querySelector(".colorNr");
 let b = []
+
 for(let i=0; i<3; i++){
     b.push(rand(-10, 10));}
 
-for (let i=0; i<b.length; i++){
-    if(b[i] < 0){
-        colorNr.innerHTML += `<span style="color: green; font-weight: bold;">${b[i]}</span> `;
+for (let i=0; i < b.length; i++){
+    if(b[i] < 0){colorNr.innerHTML += `<span style="color: green; ">${b[i]}</span> `;
     }
-    else if(b[i] === 0 ){colorNr.innerHTML += `<span style="color: red;font-weight: bold;">${b[i]}</span> `;
+    else if(b[i] === 0 ){colorNr.innerHTML += `<span style="color: red;">${b[i]}</span> `;
     }
-    else if (b[i] > 0) {colorNr.innerHTML += `<span style="color: blue; font-weight: bold;">${b[i]}</span> `;
+    else if (b[i] > 0) {colorNr.innerHTML += `<span style="color: blue;">${b[i]}</span> `;
     }
 }
-colorNr.innerHTML = b; 
-console.log(b)
+
+//3.Sukurkite kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
+
+let htmlTextElement = document.querySelector(".htmlText");
+let text = [ "An American in Paris",
+            "Breakfast at Tiffany's",
+            "2001: A Space Odyssey",
+            "It's a Wonderful Life"];
+
+for (let i = 0; i < text.length; i++) {
+    let modifiedText = text[i].replace(/[aeiouy]/gi, "");
+    htmlTextElement.innerHTML += modifiedText + "<br>";
+}
+
+//4.Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos atskirtus tarpais ir suskaičiuokite kiek tarp jų yra didesnių už 150.  Skaičiai didesni nei 275 turi būti raudonos spalvos.
+
+let sk4 = [];
+let numbers = document.querySelector(".numbers");
+// let greater150 = document.querySelector(".greater150");
+greater150 = 0;
+
+for (let i = 0; i < 300; i++) {
+    sk4.push(rand(0, 300));
+    }
+for (let i=0; i<sk4.length; i++){
+    if(sk4[i] > 275){
+        numbers.innerHTML += `<span style ="color:red;"> ${sk4[i]}</span>`;
+    }
+    else{numbers.innerHTML += `<span style ="color:black;"> ${sk4[i]}</span>`;}
+}
+// numbers.innerHTML = sk4.join(" ");
+// console.log(sk4.join(" "));
+
+for (let i = 0; i < sk4.length; i++) {
+    let d = sk4[i];
+
+    if (sk4[i] > 150) {
+    greater150++;
+    }
+}
+document.querySelector(".greater150").innerHTML ="Count of numbers greater than 150: " + greater150;
+console.log("Numbers greater than 150: " + greater150);
+
+//5.
