@@ -92,8 +92,6 @@ for (let i=0; i<sk4.length; i++){
     }
     else{numbers.innerHTML += `<span style ="color:black;"> ${sk4[i]}</span>`;}
 }
-// numbers.innerHTML = sk4.join(" ");
-// console.log(sk4.join(" "));
 
 for (let i = 0; i < sk4.length; i++) {
     let d = sk4[i];
@@ -105,4 +103,67 @@ for (let i = 0; i < sk4.length; i++) {
 document.querySelector(".greater150").innerHTML ="Count of numbers greater than 150: " + greater150;
 console.log("Numbers greater than 150: " + greater150);
 
-//5.
+//0?.Sugeneruokite masyvą, kuris būtų sudarytas iš reikšmių, kurios yra pirmame 3 uždavinio masyve, bet nėra antrame 3 uždavinio masyve.
+
+let textFrom3 = document.querySelector(".textFrom3");
+
+for (let i = 0; i < text.length; i++) {
+  let modifiedText = text[i].replace(/[^aeiouy]/gi, "");
+  textFrom3.innerHTML += modifiedText + "<br>";
+}
+
+//5.Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos. Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti. Jeigu reikia, panaudokite css, kad visi rezultatai matytųsi ekrane.
+
+let array = document.querySelector(".array");
+let array3000 = [];
+
+for (let i = 1; i <= 3000; i++) {
+    array3000.push(i);
+}
+    for(let i=0; i < array3000.length; i++){
+        if (array3000[i] % 77 === 0){
+            array.innerHTML += array3000[i];
+            
+            if (array3000[i] < array3000.length - 1) {
+                array.innerHTML += ", ";}
+            }
+    }
+
+    array.innerHTML = array.innerHTML.slice(0, -2);
+
+// let array = document.querySelector(".array");
+// let array3000 = [];
+// let divisibleBy77 = [];
+
+// for (let i = 1; i <= 5000; i++) {
+//     array3000.push(i);
+// }
+//     for(let i=0; i < array3000.length; i++){
+//         if (array3000[i] % 77 === 0){
+//             divisibleBy77.push(array3000[i])
+//             }
+//     }
+//     array.innerHTML = `${divisibleBy77}`;
+
+
+// 6.Duotas vardų masyvas, kuriame visi vardai prasideda mažąja raide. Reikia sukurti algoritmą, kuris visus vardus konvertuoja į iš didžiosios raidės prasidedančius vardus:
+
+let names = document.querySelector(".names");
+let namesArray = [
+	'alice', 'bob', 'charlie', 'david', 'emily',
+	'frank', 'grace', 'harry', 'isabella', 'jack',
+	'kate', 'liam', 'molly', 'nathan', 'olivia',
+	'peter', 'quinn', 'rachel', 'steve', 'tina'];
+
+for (let i = 0; i < namesArray.length; i++) {
+    let capitalizedName =
+    namesArray[i].charAt(0).toUpperCase() + namesArray[i].slice(1);
+
+    if (i === namesArray.length - 1) {
+    names.innerHTML += capitalizedName;} 
+    else {
+    names.innerHTML += capitalizedName + ", ";
+    }
+}
+
+
