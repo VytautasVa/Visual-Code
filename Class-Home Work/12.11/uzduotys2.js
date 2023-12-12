@@ -42,7 +42,7 @@ let foundStrings = [];
 for (let i=0; i<x.length; i++){
     const str = x[i];
     if (str.length > 0 && str[0] === "A" && str[str.length - 1] === "A"){
-        console.log(foundStrings.push({ index: i, value: str }));
+        console.log(foundStrings.push({ indeksas: i, Reikšmė: str }));
     }
 }
 if (foundStrings.length > 0) {
