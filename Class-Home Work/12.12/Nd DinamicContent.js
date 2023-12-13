@@ -2,6 +2,17 @@ const people = [];
 let currentNumeration = 1;
 
 const buttonElement = document.querySelector("#add-button");
+
+function validateName(name){
+    let isValid = true;
+    if(!name){
+        isValid = false;
+    }
+    if(!/[a-z][A-Z]/.test(name)){
+        isValid = false;
+    }
+    return isValid;
+}
 buttonElement.addEventListener("click", () => {
     const person = {};
     person.firstName = document.getElementById("firstNameInput").value;
@@ -34,6 +45,7 @@ function generateTableContent(people){
 }
 
 const buttonElement2 = document.querySelector("#remove-button");
+
 buttonElement2.addEventListener("click", () =>{
     const lineNumberToRemove = document.getElementById("removeNrInput").value;
 
