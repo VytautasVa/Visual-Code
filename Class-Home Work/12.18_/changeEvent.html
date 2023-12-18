@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 0.5rem 1.25rem;
+            font-size: small;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text" id="value"placeholder="iveskite teksta">
+
+    <script>
+        const inputElement = document.querySelector("#value");
+
+        inputElement.addEventListener("change", (event) => {
+            console.log("pildymas baigtas");
+            console.log(event);
+        })
+
+        inputElement.addEventListener("focus", (event) => {
+            console.log("laukelis aktyvuotas")
+            console.log(event)
+        })
+
+        inputElement.addEventListener("focusout", (event) => {
+            console.log("laukelis deaktyvuotas");
+            console.log(event)
+        })
+
+        const body = document.querySelector("body");
+        body.addEventListener("load", (event) => {
+            console.log("puslapis uzsikrove");
+        })
+
+        inputElement.onchange=() =>{}
+    </script>
+</body>
+</html>

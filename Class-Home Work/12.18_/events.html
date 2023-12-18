@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input{
+            padding: 0.5rem 1.25rem;
+            font-size: small;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur quas nostrum accusamus consequuntur reprehenderit sed, porro dolor animi. </p>
+
+
+    <input type="text" placeholder="įveskite tekstą" id="name">
+
+    <script>
+        document.querySelector("p").addEventListener("click",() => {
+            console.log("testr");
+        })
+
+        document.querySelector("p").onclick = () => {
+            console.log("test2")
+        }
+
+        const name = ["Justas", "Elena", "Ona"];
+        const nameInputElement = document.querySelector("#name");
+
+        for (const name of names){
+            
+        }
+
+        nameInputElement.addEventListener('keyup', (event)=>{
+            const element = event.target;
+            element.value = "Elementas modifikuotas";
+            console.log(event)
+        })
+
+    </script>
+</body>
+</html>

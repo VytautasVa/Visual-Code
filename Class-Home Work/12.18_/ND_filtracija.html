@@ -45,6 +45,66 @@
             </div>
         </form>
 
+        <h3>Paieška</h3>
+        <form action="">
+            <div class="row mb-5">
+                <div class="col-4">
+                    <lable for="titleSearch">Pavadinimas</lable>
+                    <input type="text" id="titleSearch" name="titleSearch" class="form-control">
+                </div>
+                <div class="col-4">
+                    <lable for="priceSearch">Kaina nuo...iki</lable>
+                    <input type="number" id="priceSearchMin" name="priceSearchMin" class="form-control">
+                    <input type="number" id="priceSearchMax" name="priceSearchMax" class="form-control">
+                </div>
+                <div class="col-4">
+                    <lable for="categorySearch">Kategorija</lable>
+                    <select id="categorySearch" name="categorySearch" class="form-select">
+                        <option></option>
+                        <option>smartphones</option>
+                        <option>laptops</option>
+                        <option>fragrances</option>
+                        <option>skincare</option>
+                        <option>groceries</option>
+                        <option>home-decorations</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <lable for="brandSearch">Prekinis ženklas</lable>
+                    <select id="brandSearch" name="brandSearch" class="form-select">
+                        <option></option>
+                        <option>Apple</option>
+                        <option>Samsung</option>
+                        <option>OPPO</option>
+                        <option>Huawei</option>
+                        <option>Microsoft Surface</option>
+                        <option>Infinix</option>
+                        <option>HP Pavilion</option>
+                        <option>Impression of Acqua Di Gio</option>
+                        <option>Royal_Mirage</option>
+                        <option>Fog Scent Xpressio</option>
+                        <option>Al Munakh</option>
+                        <option>Lord - Al-Rehab</option>
+                        <option>L'Oreal Paris</option>
+                        <option>Hemani Tea</option>
+                        <option>Dermive</option>
+                        <option>ROREC White Rice</option>
+                        <option>Fair & Clear</option>
+                        <option>Saaf & Khaas</option>
+                        <option>Bake Parlor Big	</option>
+                        <option>Baking Food Items</option>
+                        <option>fauji</option>
+                        <option>Dry Rose</option>
+                        <option>Boho Decor</option>
+                        <option>Flying Wooden</option>
+                        <option>LED Lights</option>
+                        <option>luxury palace</option>
+                        <option>Golden</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -65,7 +125,7 @@
     </div>
 
     
-    <script src="product.js"></script>
+    <script src="../12.14_CRUD/product.js"></script>
     <script>
         //CRUD:
         //CREATE - Sukurti įrašą. ✓
@@ -185,7 +245,98 @@
             editMode = true;
         };
 
+        //Search--------------------------------------------------------------
+    
+    const searchInputElement = document.getElementById("titleSearch");
+    const priceSearchMinElement = document.getElementById("priceSearchMin");
+    const priceSearchMaxElement = document.getElementById("priceSearchMax");
+    const categorySearchElement = document.getElementById("categorySearch");
+    const brandSearchElement = document.getElementById("brandSearch");
 
+    let filteredProducts = [];
+    let searchMode = false;
+
+    const getTableContents2 = (data) => {
+        event.preventDefault();    
+    let dynamicHTML = "";
+
+    const productsToDisplay = data || products;
+
+    for (const product of productsToDisplay) {
+        dynamicHTML += `<tr>
+        <td>${product.id}</td>
+        <td>${product.title}</td>
+        <td>${product.price}</td>
+        <td>${product.stock}</td>
+        <td>${product.brand}</td>
+        <td>${product.category}</td>
+        <td>
+            <button class="btn btn-danger" onclick="deleteProduct(${product.id})">Ištrinti</button>
+        </td>
+        <td>
+            <button class="btn btn-success" onclick="setEdit(${product.id})">Atnaujinti</button>
+        </td>
+        </tr>`;
+    }
+
+    dynamicDataElement.innerHTML = dynamicHTML;
+    };
+
+    searchInputElement.addEventListener('keyup', () => {
+        searchMode = true;
+        filteredProducts = [];
+
+    for (const product of products) {
+        if (product.title.toLowerCase().includes(searchInputElement.value.toLowerCase())) {
+            filteredProducts.push(product);
+            }
+    }
+
+    getTableContents2(filteredProducts);
+    });
+
+    priceSearchMinElement.addEventListener('change', () => {
+        if (searchMode) {
+            searchMode = false;
+        }
+
+    filteredProducts = products.filter(product => product.price >= parseFloat(priceSearchMinElement.value));
+    getTableContents2(filteredProducts);
+    });
+
+    priceSearchMaxElement.addEventListener('change', () => {
+        if (searchMode) {
+            searchMode = false;
+        }
+
+    filteredProducts = products.filter(product => {
+        const minPrice = parseFloat(priceSearchMinElement.value);
+        const maxPrice = parseFloat(priceSearchMaxElement.value);
+        return product.price >= minPrice && product.price <= maxPrice;
+    });
+
+    getTableContents2(filteredProducts);
+    });
+
+    categorySearchElement.addEventListener('change', () => {
+        if (searchMode) {
+            searchMode = false;
+        }
+
+    const selectedCategory = categorySearchElement.value;
+    filteredProducts = products.filter(product => product.category === selectedCategory);
+    getTableContents2(filteredProducts);
+    });
+
+    brandSearchElement.addEventListener('change', () => {
+        if (searchMode) {
+            searchMode = false;
+        }
+
+    const selectedBrand = brandSearchElement.value;
+    filteredProducts = products.filter(product => product.brand === selectedBrand);
+    getTableContents2(filteredProducts);
+    });
 
     </script>
 </body>
