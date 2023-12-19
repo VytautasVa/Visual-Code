@@ -25,8 +25,18 @@ buttonElement.addEventListener("click", () => {
     // console.log(person)
 
     people.push(person)
+
+    //Save to localStorage
+    localStorage.setItem("people", JSON.stringify(people));
+
     generateTableContent(people);
 });
+
+const storedPeople = localStorage.getItem("people");
+if (storedPeople) {
+    people.push(...JSON.parse(storedPeople));
+    generateTableContent(people);
+}
 
 function generateTableContent(people){
     let dynamicHTML = "";

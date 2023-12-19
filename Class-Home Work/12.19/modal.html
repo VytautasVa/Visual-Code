@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .modal-bacground{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            background-color: rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+        }
+        .modal1{
+            background-color:white;
+            width: 50%;
+            height: 50%;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="modal-bacground">
+        <div class="modal1">Lorem, ipsum.
+            <div class="buttons">
+                <h3>interesting title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo dolorem impedit tempore alias, enim aperiam nostrum atque, laboriosam iure qui dolor, maiores labore repellat? Sequi quisquam quia natus. Quo repudiandae cum cupiditate odit sit, harum consectetur voluptates omnis aspernatur adipisci amet ea. Deserunt non ad voluptatibus minima error facere assumenda!</p>
+                <button onclick="closeModal()">close</button>
+            </div>
+        </div>
+    </div>
+    
+    <h3>Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tenetur officiis, commodi id consequatur illum optio quidem rem corrupti aperiam tempore iste, et repellendus sit ullam! Cumque saepe veniam adipisci libero ullam. Voluptatibus debitis excepturi id doloremque sapiente similique quas, culpa pariatur earum doloribus iusto reiciendis reprehenderit dolor atque, maiores porro aperiam autem facere. Modi ullam alias et itaque asperiores, obcaecati autem voluptatem tempora, distinctio vero in quo saepe aspernatur laborum, rem voluptas similique. Perspiciatis suscipit dolore mollitia soluta facilis quasi et voluptas fugit temporibus quidem ipsa iste error ratione dolor rerum quod quam, illum ex deserunt esse sequi culpa.</p>
+    <hr>
+    <h3>Title</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tenetur officiis, commodi id consequatur illum optio quidem rem corrupti aperiam tempore iste, et repellendus sit ullam! Cumque saepe veniam adipisci libero ullam. Voluptatibus debitis excepturi id doloremque sapiente similique quas, culpa pariatur earum doloribus iusto reiciendis reprehenderit dolor atque, maiores porro aperiam autem facere. Modi ullam alias et itaque asperiores, obcaecati autem voluptatem tempora, distinctio vero in quo saepe aspernatur laborum, rem voluptas similique. Perspiciatis suscipit dolore mollitia soluta facilis quasi et voluptas fugit temporibus quidem ipsa iste error ratione dolor rerum quod quam, illum ex deserunt esse sequi culpa.</p>
+    <hr>
+
+    <button class="btn btn-primary" onclick="openModal()">Open modal</button>
+
+    <script>
+
+        const modalBacground = document.querySelector(".modal-bacground");
+        const modal = document.querySelector(".modal1")
+
+        function openModal(){
+            modalBacground.style.visibility = "visible"
+        }
+        function closeModal(){
+            modalBacground.style.visibility = "hidden"
+        }
+        
+        modalBacground.onclick = (event) => {
+            if(!modal.contains(event.target)){
+            closeModal();}
+        };
+        
+    </script>
+</body>
+</html>
