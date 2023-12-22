@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="text"></div>
+<script>
+    // function newFunction (a, b) {
+    //     return(a+b)};
+    //     console.log(newFunction(5,2))
+
+    // const newFunction2 = (a, b) => {
+    //     return(a+b)};
+    //     console.log(newFunction2(5,10))
+
+
+    function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+greet("Jon")
+console.log("Hello, " + greet + "!");
+
+    function getTable(row, column) {
+    let table = document.createElement("table");
+
+    table.style.border = "2px solid black";
+
+    for (let i = 0; i < row; i++) {
+        let rowElement = table.insertRow();
+        for (let j = 0; j < column; j++) {
+            let cell = rowElement.insertCell();
+            // Add some content to the cells (for demonstration purposes)
+            cell.textContent = `Row ${i + 1}, Column ${j + 1}`;
+            // Apply additional cell styling if needed
+            cell.style.border = "1px solid black";
+            cell.style.padding = "8px";
+        }
+    }
+
+    return table;
+}
+// Append the generated table to the element with class "text"
+document.querySelector(".text").appendChild(getTable(2, 5));
+
+
+//if you uncomment line below this, browser will throw error because firstly we need to declare function before accessing it.
+//console.log(arrowFunction());
+
+//declaring variable as a function
+let arrowFunction = () => {
+    console.log("This is arrow function!");
+};
+
+//activating function
+//shows arrow function log
+arrowFunction();
+
+//arrow functions are also known as lambda/closure/anonymous (all synonyms for same meaning)
+
+//as you can see we declare variable and when assign value to it
+//let name = ...
+
+//when we assign arrow/lambda/closure function to variable
+
+//let name = () => { code . . . };
+
+//because we can store functions to variables we can also assign new function to the same variable
+
+arrowFunction = () => {
+    console.log("Assigned new function!");
+};
+
+arrowFunction();
+
+//we can also pass functions as parameters to other functions and change them at run time
+
+arrowFunction = () => {
+    console.log("I am a function and I am passed to a function!");
+};
+
+const newArrowFunction = (yourFunction) => {
+    console.log("New arrow function call!");
+
+    //activating passed function!
+    yourFunction();
+};
+
+newArrowFunction(arrowFunction);
+
+//arrow/lambda/closure/anonymous function can also be declared with "function()" key word insted of "()"
+
+arrowFunction = function () {
+    console.log(
+        "I do not have arrows but I still FUNCTION(lol) like arrow function!"
+    );
+};
+
+arrowFunction();
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+
+
+<Script>
+    //sudėties funkcija
+    function add(a, b) {
+        return a+b
+    }
+    console.log(add(5, 7));
+
+    //patikrinimo funkcija
+    function isEven(number) {
+        return number % 2 === 0;
+    }
+    console.log(isEven(6));
+
+    //teksto išvesties funkcija
+    function greet(name) {
+        console.log(`Labas ${name}`);
+    }
+    greet("Mantas");
+
+    //Faktorialo skaičiavimas (visu skaičių sudauginimas (5= 5*4*3*2*1))
+    function factorial(number) {
+        if(number === 0 || number === 1){
+            return 1
+        }
+        else{
+            return number * factorial(number - 1);
+        }
+    }
+    const factorial2 = factorial(5)
+    console.log(factorial2);
+
+    //Ciklo sukūrimas su funkcija
+    function prasuktiCikla(kartai) {
+        if(kartai>0){
+            console.log("Veiksmas nr." + kartai);
+            prasuktiCikla(kartai-1)
+        }
+    }
+    prasuktiCikla(5)
+
+    //Konvertavimo funkcija
+    function celsiusToFarenheit(celsius) {
+        return(celsius * 9/5)+32
+    }
+    console.log(celsiusToFarenheit(1));
+
+    //funkcija Max skaičiui, su array(masyvais)
+
+    const array = [5, 4, 15, 1, 19, 101, 50, 30, 80, 36, 9, 99, 55, 4, 4, 1, 1, 1, 1, 5, 8, 8, 8]
+    // destraktinimas ... leidžia išsiimti po vieną narį iš masyvo.
+    function getMaxNumber(array){
+        return Math.max(...array)
+    }
+    console.log(getMaxNumber(array));
+
+    //random nr. gavimas
+    function getRandomNumber(min, max) {
+        return Math.floor(Math.random()*(max + min + 1)) + min
+    }
+    console.log(getRandomNumber(0,10));
+
+    //išskirti unikalias reikšmes iš masyvo (array)
+    function getUniqueValue(array) {
+        return [... new Set(array)]
+    }
+    console.log(getUniqueValue(array));
+
+    //map - paima kėkvieną reikšmę iš masyvo. + su ta reikšme galima atlikti veiksmus
+    function squereValues(array) {
+        return array.map(number => number*number)
+    }
+    const squared  = squereValues([1,2,3,4,5]);
+    console.log(squared);
+    console.log(squereValues(array));
+
+    //funkcija sumažinti masyva (array)
+    function sumazuntiMasyva(arr, start, end) {
+        return arr.slice(start, end)
+    }
+    console.log(array);
+    const sliced = sumazuntiMasyva(array, 0, 6);
+    console.log(sliced);
+
+    //funkcija atvirkštiniam tekstui gražinti
+    function reverseText(text){
+        return text.split("").reverse().join("");
+    }
+    console.log(reverseText("GIRTAS"));
+
+    //funkcija skaičiuoti masyvo skaičių sumą
+    function sumArr(array) {
+        let sum = 0;
+        for (let index = 0; index < array.length; index++) {
+            sum += array[index]
+        }
+        return sum;
+    }
+    console.log(sumArr([15,15,15,15]));
+
+
+
+</Script>    
+</body>
+</html>
