@@ -1,3 +1,7 @@
+* {
+    cursor: url("glass2.png"), auto;
+    
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;

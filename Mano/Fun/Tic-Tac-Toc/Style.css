@@ -1,0 +1,157 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    border: solid 1px black;
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.modal-wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(92, 92, 92, 0.5);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    height: 30%;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+.modal-header{
+    width: 100%;
+    border-bottom: solid 1px black;
+    font-size: 3rem;
+    text-align: center;
+}
+.modal-body{
+    width: 100%;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.modal-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer{
+    height: 100vh;
+    width: 100vW;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+.square{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square:nth-child(2),
+.square:nth-child(5),
+.square:nth-child(8){
+    border-right: solid 2px black;
+    border-left: solid 2px black;
+}
+.square:nth-child(4),
+.square:nth-child(5),
+.square:nth-child(6){
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+.x, .x-hover{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.x::before, .x::after, .x-hover::before, .x-hover::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    background-color: black;
+}
+.x::before, .x-hover::before{
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.x::after, .x-hover::after{
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.x-hover::before, .x-hover::after{
+    background-color: rgb(125, 125, 125);
+}
+.o,
+.o-hover{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.o::before, .o-hover::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+}
+.o::after, .o-hover::after{
+    position: absolute;
+    content: "";
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+    background-color: white;
+}
+.o-hover::before{
+    background-color: rgb(125, 125, 125);
+}
+.disabled{
+    pointer-events: none;
+}
+.square:hover{
+    cursor: pointer;
+}
+.d-none{
+    display: none;
+}
