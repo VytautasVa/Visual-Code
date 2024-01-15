@@ -1,77 +1,128 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-section{
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  section {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: antiquewhite;
-}
-
-.container{
-    background-color: white;
-    padding: 1rem;
+    background-color: #363636;
+  }
+  
+  .container {
+    background-color: rgba(29, 26, 19, 0.425);
+    padding: 2rem;
     width: 350px;
-
-}
-
-h2{
-    background-color: blueviolet;
-    color: orange;
-    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+  }
+  
+  h2 {
+    font-size: px;
+    background-color: #5e5e5e;
+    color: #ffa500;
+    margin: -2rem -2rem 1rem;
+    padding: 1rem;
     text-align: center;
-    }
-
-.bill{
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .bill,
+  .service,
+  .btn,
+  .tip {
+    margin-bottom: 15px;
+  }
+  
+  .bill,
+  .service {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    border-bottom: 2px solid blueviolet;
-    padding: 5px;
-}
-
-.service{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    border-bottom: 2px solid blueviolet;
-    padding: 5px;
-}
-
-.btn{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    border-bottom: 2px solid blueviolet;
-    padding: 5px;
-}
-
-#btn{
-    background-color: orange;
-    border-radius: 5px;
+    padding-bottom: 10px;
+  }
+  
+  .service {
+    margin-bottom: 2rem;
+  }
+  
+  .bill,
+  .service,
+  .calculate {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.604);
+  }
+  
+  label {
+    font-weight: bold;
+    color: wheat;
+  }
+  
+  input,
+  select {
+    text-align: center;
+    width: 60%;
+    padding: 10px;
     border: none;
-    color: white;
-    width: 95%;
-    height: 30px;
-}
-
-.tip{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 5px;
-    background-color: gainsboro;
-}
-
-.total{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 5px;
-    background-color: gainsboro;
-    color: red;
-}
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #555;
+    color: wheat;
+  }
+  
+  input:hover,
+  select:hover {
+    background-color: #666;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+  
+  .btn button {
+    background-color: #9a6503;
+    border: none;
+    border-radius: 5px;
+    color: wheat;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn button:hover {
+    background-color: #d48500;
+  }
+  
+  .tip,
+  .total {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  #tip,
+  #total {
+    font-weight: bold;
+  }
+  
+  p {
+    font-weight: bold;
+  }
+  
+  .total p {
+    color: #ff6666;
+  }
+  .tip {
+    color: wheat;
+  }

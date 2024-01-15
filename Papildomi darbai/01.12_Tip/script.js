@@ -11,10 +11,10 @@ function calculate (){
     const serviceValue = service.value
 
     if(!billValue){
-        return alert("iveskite saskaita")
+        return alert("Įveskite sumą")
     }
     if(billValue <= 0){
-        return alert ("iveskite tigiama")
+        return alert ("Įveskite teigiama")
     }
     const tipValue = tipCalculate(billValue, serviceValue)
 
