@@ -2,6 +2,10 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 
+require("dotenv").config();
+
+console.log(process.env);
+
 //Prisijungimas prie duomenų bazės pasinaudojant URL
 mongoose.connect(
     `mongodb+srv://vytautasv85:gR0b93wUY3DQlbBj@forumvyt.dj9ghgh.mongodb.net/et/`
