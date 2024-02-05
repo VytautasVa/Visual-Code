@@ -8,15 +8,69 @@ body{
     color: #fff;
 }
 
+h1{
+    font-size: 45px;
+    padding: 25px;
+    text-align: center;
+}
+p{
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+input{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
 .row1{
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-between;
     align-items: center;
     background-image: url(row1-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 150vh;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header img{
+    width: 9.25rem;
+    height: 2.5rem;
+    display: block;
+}
+
+.row1 .header select{
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    
+}
+.row1 .header button{
+    background-color: red;
+    cursor: pointer;
+    padding: 4px 16px;
+    justify-content: center;
+    letter-spacing: normal;
+    line-height: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    
 }
 
 .header{
@@ -24,13 +78,20 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-
+.row1-email button{
+    color: #fff;
+    background: red;
+    
+}
+/* ------------------------------------------- */
 .row2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* ------------------------------------------- */
 .row3{
     display: flex;
     flex-direction: column;
@@ -38,6 +99,7 @@ body{
     align-items: center;
 }
 
+/* ------------------------------------------- */
 .row4{
     display: flex;
     flex-direction: column;
@@ -45,6 +107,7 @@ body{
     align-items: center;
 }
 
+/* ------------------------------------------- */
 .row5{
     display: flex;
     flex-direction: column;
@@ -52,6 +115,7 @@ body{
     align-items: center;
 }
 
+/* ------------------------------------------- */
 .row6{
     display: flex;
     flex-direction: column;
