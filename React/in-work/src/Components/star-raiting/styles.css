@@ -1,0 +1,17 @@
+body{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.star-rating{
+    ;
+}
+
+.active{
+    color: #fff700;
+}
+.inactive{
+    color: #000000;
+}
