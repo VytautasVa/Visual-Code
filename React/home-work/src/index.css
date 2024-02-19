@@ -2,3 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+.form1{
+    background-color: antiquewhite;
+    padding: 20px;
+    gap: 15px;
+    display: grid;
+    place-items: center;
+}
+button{
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+    background-color: aqua;
+    border-radius: 33% 67% 34% 66% / 19% 21% 79% 81%  ;
+}
+.box-container{
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
