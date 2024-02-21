@@ -35,3 +35,73 @@ button{
     flex-wrap: wrap;
     gap: 5px;
 }
+.Form2{
+    background-color: brown;
+    padding: 50px;
+    display: grid;
+    place-items: center;
+}
+.Form2 input{
+    background-color: aqua;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    border: 3px black solid;
+}
+.Form2 ul li{
+    border: 1px solid black;
+    border-radius: 5px;
+    list-style: inside;
+}
+
+.Form3{
+    background-color: rgb(42, 165, 83);
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+.Form3 input{
+    background-color: rgb(112, 122, 122);
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    border: 3px black solid;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.Form4{
+    background-color: #e1e1e7;
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+.Form5{
+    background-color: bisque;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+.border-radius{
+    display: flex;
+    
+}
+.form-created{
+    background-color: aqua;
+    display: grid;
+    place-items: center;
+}
+.form-saved{
+    background-color: aliceblue;
+    display: grid;
+    place-items: center;
+}

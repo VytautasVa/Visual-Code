@@ -7,11 +7,15 @@ import Base3 from "./base3";
 import Base4 from "./base4";
 import Base5 from "./base5";
 import Form1 from "./Form1";
+import Form2 from "./Form2";
+import Form3 from "./Form3";
+import Form4 from "./Form4";
+import SquareCreator from "./Form5";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Base1 />
+    {/* <Base1 />
     <Base2
       atributas1="Tekstas"
       atributas2={4}
@@ -36,5 +40,9 @@ root.render(
       text2="tekstas DU"/>
     <Base5 text1="kitas tekstas" text2="dar kitas tekstas" color = "orange" />  
     <Form1/>
+    <Form2/>
+    <Form3/>
+    <Form4/> */}
+    <SquareCreator/>
   </React.StrictMode>
 );
