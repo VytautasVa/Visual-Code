@@ -1,6 +1,5 @@
 import React, { useState ,useEffect } from "react";
 import Timer from "./Timer";
-import {BsFillPlayFill, BsPauseFill, BsStopFill} from "react-icons/bs";
 
 document.body.style.background = "#282c50"
 
@@ -13,7 +12,7 @@ export default function CountDownTimer(){
 
     const[showEndScrean, setShowEndScrean] = useState({
         show: false,
-        message: "Happy coding in 2024 !!!"
+        message: "🚀"
     });
 
     useEffect(()=>{
@@ -101,14 +100,14 @@ export default function CountDownTimer(){
 
             {!isRunning && (
                 <button className="btn btn-accept btn-lg" onClick={startTimer}>
-                    <BsFillPlayFill/>
+                    Start
                 </button>)}
             {isRunning && (
                 <button className="btn btn-warning btn-lg" onClick={pauseTimer}>
-                    <BsPauseFill/>
+                    Pause
                 </button>)}{" "}
             <button className="btn btn-danger btn-lg" onClick={stopTimer}>
-                <BsStopFill/>
+                STOP
             </button>
         </div>
     );
