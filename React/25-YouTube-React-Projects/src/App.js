@@ -11,6 +11,7 @@ import LightDarkMode from './Components/light-dark-mode';
 import ScrollIndicator from './Components/scroll-indicator';
 import TabTest from './Components/custom-tabs/tab-test';
 import ModalTest from './Components/modal_popup/modal-test';
+import GithubProfileFinder from './Components/GitHub-profile-finder';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       <LightDarkMode/>
       <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} /> */}
       {/* <TabTest/> */}
-      <ModalTest/>
+      {/* <ModalTest/> */}
+      <GithubProfileFinder/>
     </div>
   );
 }
