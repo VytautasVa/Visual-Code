@@ -10,6 +10,7 @@ import QRCodeGenerator from './Components/QR-code-generator';
 import LightDarkMode from './Components/light-dark-mode';
 import ScrollIndicator from './Components/scroll-indicator';
 import TabTest from './Components/custom-tabs/tab-test';
+import ModalTest from './Components/modal_popup/modal-test';
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       <QRCodeGenerator/>
       <LightDarkMode/>
       <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} /> */}
-      <TabTest/>
+      {/* <TabTest/> */}
+      <ModalTest/>
     </div>
   );
 }
