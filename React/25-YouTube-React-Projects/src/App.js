@@ -13,6 +13,9 @@ import TabTest from './Components/custom-tabs/tab-test';
 import ModalTest from './Components/modal_popup/modal-test';
 import GithubProfileFinder from './Components/GitHub-profile-finder';
 import SearchAutocomplete from './Components/search-autocoplete-with-api';
+import TicTacToe from './Components/TicTacTo';
+import FeatureFlagGlobalState from './Components/features-flag/context';
+import FeatureFlags from './Components/features-flag';
 
 function App() {
   return (
@@ -32,7 +35,11 @@ function App() {
       {/* <TabTest/> */}
       {/* <ModalTest/> */}
       {/* <GithubProfileFinder/> */}
-      <SearchAutocomplete/>
+      {/* <SearchAutocomplete/> */}
+      {/* <TicTacToe/> */}
+      <FeatureFlagGlobalState>
+        <FeatureFlags/>  
+      </FeatureFlagGlobalState>
     </div>
   );
 }
